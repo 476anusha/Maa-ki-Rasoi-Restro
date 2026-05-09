@@ -26,9 +26,9 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-const PHONE = "+91 7222930300";
-const CALL_LINK = "tel:+917222930300";
-const WHATSAPP_LINK = "https://wa.me/917222930300";
+const PHONE = "+91 73149 93533";
+const CALL_LINK = "tel:+91 7314993533";
+const WHATSAPP_LINK = "https://wa.me/917314993533";
 
 const requestedFoodImages = [
   {
