@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fffdf9;
+  --foreground: #1f1f1f;
+  --cream: #f4ede4;
+  --red: #c0392b;
+  --gold: #d4a373;
+  --ink: #1f1f1f;
+  --muted: #4b4b4b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(212, 163, 115, 0.18), transparent 32rem),
+    linear-gradient(180deg, #fffdf9 0%, #fff8f0 48%, #fffdf9 100%);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(192, 57, 43, 0.22);
+}
+
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.glass {
+  background: rgba(255, 253, 249, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 24px 70px rgba(31, 31, 31, 0.08);
+  backdrop-filter: blur(22px);
+}
+
+.section-shell {
+  width: min(1160px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.premium-shadow {
+  box-shadow: 0 24px 80px rgba(46, 24, 18, 0.12);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.masonry {
+  column-count: 3;
+  column-gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+
+@keyframes scooter {
+  0% {
+    transform: translateX(-12%) translateY(0);
+  }
+  50% {
+    transform: translateX(6%) translateY(-5px);
+  }
+  100% {
+    transform: translateX(-12%) translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 16px 42px rgba(192, 57, 43, 0.28);
+  }
+  50% {
+    box-shadow: 0 22px 64px rgba(192, 57, 43, 0.46);
+  }
+}
